@@ -1,0 +1,167 @@
+body{
+
+	background-color: rgb(0, 15, 50);
+
+}
+
+#container{
+
+	margin: auto;
+	/*background-color: rgb(30, 30, 30);*/
+	width: 1000px;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+#background{
+
+	width: 100%;
+}
+
+
+#container1{
+	margin: 0;
+	background-color: rgb(255, 100, 0);
+	opacity: 0.99;
+	width: 120px;
+	height: 70px;
+	position: absolute;
+	right: 200px;
+	top: 110px;
+}
+
+#container2{
+	margin: 0;
+	background-color: rgb(255, 100, 0);
+	opacity: 0.99;
+	width: 90px;
+	height: 65px;
+	position: absolute;
+	right: 70px;
+	top: 110px;
+}
+
+#container3{
+	margin: 0;
+	background-color: rgb(255, 100, 0);
+	opacity: 0.99;
+	width: 90px;
+	height: 60px;
+	position: absolute;
+	right: 350px;
+	top: 110px;
+}
+
+
+#startKnapp{
+	background-color: rgb(255, 255, 0);
+	width: 250px;
+	height: 100px;
+	right: 40px;
+	bottom: 100px;
+	position: absolute;
+	border-radius: 35%;
+	box-shadow: 0px 0px 15px 15px rgb(255, 255, 0);
+}
+
+#startKnapp:hover {
+	background-color: rgb(255, 110, 0);
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 15px 15px rgb(255, 110, 0);
+}
+
+#startKnappText{
+	padding: 0px;
+	font-family: arial;
+	font-size: 50px;
+	top: 20px;
+	left: 30px;
+	position: absolute;
+	/*font-family: "Times New Roman", Times, serif; */
+}
+
+
+#pumpkinContainer{
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	animation: pumpkinMove 5s ease;
+}
+
+/*#startKnapp:hover #pumpkinContainer {
+	animation: pumpkinMove 5s ease;
+	
+}*/
+
+
+/*#startKnapp:hover #pumpkinContainer{
+	animation: pumpkinMove 5s ease; 
+} */
+
+@keyframes pumpkinMove {
+
+	0%{
+		transform: scale(1);
+
+	}
+	25%{
+		-webkit-transform: rotate(180deg) scale(1.2);
+	}
+	50% {
+		transform: scale(1.4);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+/* Ekperimenterer litt med denne. Prøver å få farge kunn inni munne på gresskarrene. Men vet ikke om det
+lar seg gjøre. Tenket også at nå man tar muserpekerern over knappen så skal de tre gresskarrene komme mot 
+en på skjærmen og rotere en gang før den går tilbake til der den var. Hvis det går da. */
+#pumpkins1{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 500px;
+	height: 200px;
+}	
+
+
+
+
+/* Tenkte det kunne være kult med en bevegende hesterytter uten hode.. Mohahahahah!*/
+#horseman1{
+	position: absolute;
+	bottom: 0px;
+	right: -450px;
+	width: 450px;
+	height: 300px;
+	animation-name: horsemanMoves;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes horsemanMoves{
+	0%{
+		right: -450px;
+	}
+	1%{
+		top:300px;
+	}
+	100%{
+		right: 1000px;
+		top: 0;
+	}
+}
+
+
+
+
+
+
